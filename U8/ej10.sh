@@ -1,5 +1,5 @@
 #!/bin/bash
-
+numero=$1
 contador=1
 divisor=0
 
