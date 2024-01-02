@@ -17,8 +17,8 @@ read -p "Opcion: " menu
 	    2) restar;;
 	    3) dividir;;
 	    4) multiplicar;;
-	    0) exit;;
-	    *) echo "Opcion no valida";;
+	    0) exit 1;;
+	    *) echo "ERROR: Opcion no valida";;
 	esac
 }
 
@@ -51,6 +51,7 @@ function multiplicar(){
 }
 
 mostrar_menu
+
 while [[ $menu -ne 0 ]]
 do
 mostrar_menu
